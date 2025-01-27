@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,45 +15,67 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-              }
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
             }
-          }
         }
-      </script>
+    </script>
 </head>
+
 <body>
     <header></header>
-    <main class="max-w-xl mx-auto px-16 lg:px-28">
-        
+    <main class="md:w-screen mx-auto px-16 lg:px-28">
+
         <!-- header section -->
-         <header class="pt-10 mb-20">
+        <header class="flex flex-col pt-10 mb-20 sm:flex-row sm:justify-between">
             <!-- text -content  -->
-             <div>
+            <div>
                 <h1 class="text-5xl md:text-7xl">It's good<br>
                     tea time at The <br> Tea House
                 </h1>
 
                 <br>
 
-                <p class="text-gray-500 w-3/4 mb-4">Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste Buds.                
+                <p class="text-gray-500 w-3/4 mb-4">Tea and Botanical Solutions Supplier Give Optimum Satisfaction To
+                    Your Taste Buds.
                 </p>
 
-                <button class="bg-gradient-to-r from-orange-500 to-red-500 px-2 py-2 text-white rounded-lg"> Explore More <i class="fa-solid fa-arrow-right  mx-2 align-middle -rotate-45"></i>
+                <button
+                    class="bg-gradient-to-r from-orange-500 to-red-500 px-2 py-2 text-white rounded-lg text-xl font-bold">
+                    Explore More <i class="fa-solid fa-arrow-right  mx-2 -rotate-45"></i>
                 </button>
-             </div>
+            </div>
 
-             <!-- image content  -->
-              <div></div>
+            <!-- image content  -->
+            <div class="max-w-full relative">
+                <!-- image  -->
+                <div>
+                    <img src="./images/banner.png" class="max-w-screen max-w-xs" alt="">
 
-         </header>     
-        
+                </div>
+                <!-- card -->
+                <div
+                    class="flex flex-row-reverse items-center justify-center w-fit h-auto bg-white shadow-xl p-4 rounded-lg relative -top-12 sm:-top-12">
+                    <div>
+                        <h1>5.00</h1>
+                        <p>Trust Pilot Ratings</p>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-star text-amber-400 text-3xl"></i>
+                    </div>
+                </div>
+            </div>
+
+        </header>
+
     </main>
     <footer>
 
     </footer>
 </body>
+
 </html>
